@@ -38,7 +38,7 @@ def main():
     for key in cache:
         if key > maxi:
             maxi = key
-    print(maxi)
+    return print(maxi)
 
 
 if __name__ == "__main__":
