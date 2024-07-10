@@ -1,19 +1,18 @@
-earnings_cache = {
-    "T": 1500,
-    "P": 1000,
-    "C": 3000
-}
-
-time_cache = {
-    "T": 5,
-    "P": 4,
-    "C": 10
-}
-
-keys_list = list(time_cache.keys())
-
-
 def optimal_earnings(n, earnings, prev, cache):
+    earnings_cache = {
+        "T": 1500,
+        "P": 1000,
+        "C": 3000
+    }
+
+    time_cache = {
+        "T": 5,
+        "P": 4,
+        "C": 10
+    }
+
+    keys_list = list(time_cache.keys())
+
     if n < 4:
         return
 
@@ -40,8 +39,6 @@ def main():
         if key > maxi:
             maxi = key
     print(maxi)
-    for item in cache[maxi]:
-        print(f"T: {item[0]}, P: {item[1]}, C: {item[2]}")
 
 
 if __name__ == "__main__":
